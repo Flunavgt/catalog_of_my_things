@@ -1,50 +1,35 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Catalog of my things
 
-> Description the project.
+> App developed in Ruby with UI to manage Books, Music and Games.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Verify you have Ruby installed on your system
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Clone the repository wit this link https://github.com/Flunavgt/catalog_of_my_things.git
 
-### Setup
+### Change to repo directory
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+### run App.rb
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Federico Luna**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Flunavgt](https://github.com/Flunavgt)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
 👤 **Author2**
 
