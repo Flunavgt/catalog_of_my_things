@@ -31,11 +31,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@flunavgt](https://twitter.com/flunavgt)
 - LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
-👤 **Author2**
+👤 **Addis Tsega**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Aseadd](https://github.com/Aseadd)
+- Twitter: [@AdaTsega](https://twitter.com/AdaTsega)
+- LinkedIn: [addis-tsega](https://linkedin.com/in/addis-tsega)
 
 ## 🤝 Contributing
 
