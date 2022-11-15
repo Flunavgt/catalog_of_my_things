@@ -4,15 +4,25 @@ require_relative './music/create_genre'
 require_relative './music/music_album'
 require_relative './music/lists'
 require_relative './music/genre'
-require_relative './item'
+require_relative './classes/item'
+require_relative './options/add_book'
+require_relative './options/list_books'
+require_relative './options/list_lables'
 
 class App
   attr_accessor :music_albums, :genres, :games, :authors
 
   def initialize
+    @books = []
+    @labels = []
     @user_options = 0
     @genres = PreserveData.load_genres
-    @music_albums = PreserveData.load_albums(@genres)
+    @music_albums = PreserveData.load_albums(@genres)    
+  end
+  
+  def load_data
+    load_books
+    load_labels
   end
 
   def list_options
@@ -24,7 +34,7 @@ class App
     when 3
       list_labels
     when 4
-      list_all_genres
+      List.list_all_genres(@genres)
     when 5
       list_games
     end

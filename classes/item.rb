@@ -5,7 +5,7 @@ class Item
   attr_accessor :publish_date, :archived
   attr_reader :id , :author, :label, :genre, :artist, :album_title
 
-  def initialize(id, publish_date)
+  def initialize(publish_date)
     @id = id || SecureRandom.random_number(1000)
     @publish_date = publish_date || DateTime.now.strftime('%m/%d/%Y')
     @archived = move_to_archive
@@ -43,8 +43,6 @@ class Item
   private
 
   def can_be_archived?
-    date = DateTime.now.strftime('%Y').to_i
-    publish_year = @publish_date[6..10].to_i
-    date - publish_year > 10
+    true
   end
 end
