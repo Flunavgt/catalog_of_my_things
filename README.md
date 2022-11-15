@@ -37,6 +37,13 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@AdaTsega](https://twitter.com/AdaTsega)
 - LinkedIn: [addis-tsega](https://linkedin.com/in/addis-tsega)
 
+👤 **Neeraj Bhardwaj**
+
+- GitHub: [Neeraj](https://github.com/rebel216)
+- Twitter: [Neeraj](https://twitter.com/rebel216)
+- LinkedIn: [Neeraj](https://www.linkedin.com/in/neerajbhardwaj216/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
