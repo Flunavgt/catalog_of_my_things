@@ -4,39 +4,39 @@ require_relative '../classes/label'
 require_relative '../app'
 
 def load_books
-  if File.exist?('./data/book.json')
-    file = File.open('./data/book.json')
+  return unless File.exist?('./data/book.json')
 
-    if file.size.zero?
-      'nothing saved yet.'
-    else
-      book = JSON.parse(File.read('./data/book.json'))
+  file = File.open('./data/book.json')
 
-      book.each do |book|
-        book = Book.new(book['publish_date'], book['publisher'], book['cover_state'])
-        @books << book
-      end
+  if file.size.zero?
+    'nothing saved yet.'
+  else
+    books = JSON.parse(File.read('./data/book.json'))
+
+    books.each do |book|
+      books = Book.new(book['publish_date'], book['publisher'], book['cover_state'])
+      @books << books
     end
-    file.close
   end
+  file.close
 end
 
 def load_labels
-  if File.exist?('./data/labels.json')
-    file = File.open('./data/labels.json')
+  return unless File.exist?('./data/labels.json')
 
-    if file.size.zero?
-      'nothing saved yet.'
-    else
-      labels = JSON.parse(File.read('./data/labels.json'))
+  file = File.open('./data/labels.json')
 
-      labels.each do |label|
-        label = Label.new(label['title'], label['color'])
-        @labels << label
-      end
+  if file.size.zero?
+    'nothing saved yet.'
+  else
+    labels = JSON.parse(File.read('./data/labels.json'))
+
+    labels.each do |label|
+      label = Label.new(label['title'], label['color'])
+      @labels << label
     end
-    file.close
   end
+  file.close
 end
 
 def save_book(publish_date, publisher, cover_state)
@@ -46,20 +46,20 @@ def save_book(publish_date, publisher, cover_state)
     cover_state: cover_state
   }
 
-  if File.exist?('./data/book.json')
-    file = File.open('./data/book.json')
+  return unless File.exist?('./data/book.json')
 
-    if file.size.zero?
-      book = [obj]
-    else
-      book = JSON.parse(File.read('./data/book.json'))
-      book << obj
-    end
+  file = File.open('./data/book.json')
 
-    file.close
-
-    File.write('./data/book.json', JSON.pretty_generate(book))
+  if file.size.zero?
+    book = [obj]
+  else
+    book = JSON.parse(File.read('./data/book.json'))
+    book << obj
   end
+
+  file.close
+
+  File.write('./data/book.json', JSON.pretty_generate(book))
 end
 
 def save_label(title, color)
@@ -68,18 +68,18 @@ def save_label(title, color)
     color: color
   }
 
-  if File.exist?('./data/labels.json')
-    file = File.open('./data/labels.json')
+  return unless File.exist?('./data/labels.json')
 
-    if file.size.zero?
-      label = [obj]
-    else
-      label = JSON.parse(File.read('./data/labels.json'))
-      label << obj
-    end
+  file = File.open('./data/labels.json')
 
-    file.close
-
-    File.write('./data/labels.json', JSON.pretty_generate(label))
+  if file.size.zero?
+    label = [obj]
+  else
+    label = JSON.parse(File.read('./data/labels.json'))
+    label << obj
   end
+
+  file.close
+
+  File.write('./data/labels.json', JSON.pretty_generate(label))
 end
