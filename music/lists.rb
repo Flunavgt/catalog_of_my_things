@@ -7,8 +7,10 @@ class List
     else
       array.each do |album|
         puts "Date published #{album.publish_date},
+      Artist #{album.artist},
+      Title #{album.album_title},
       Archive status #{album.archived},
-      Spotify status #{album.on_spotify}"
+      Spotify status  #{album.on_spotify}"
       end
     end
   end

@@ -1,8 +1,10 @@
 [
   {
-    "publish_date": "11/17/2022",
-    "id": 761,
-    "on_spotify": null,
-    "genre": 788
+    "publish_date": "11/16/2022",
+    "id": 539,
+    "on_spotify": true,
+    "artist": "Toto",
+    "album_title": "Greatest",
+    "genre": 547
   }
 ]
