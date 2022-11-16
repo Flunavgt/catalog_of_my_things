@@ -5,14 +5,22 @@ require_relative './music/music_album'
 require_relative './music/lists'
 require_relative './music/genre'
 require_relative './item'
+require_relative './game/author'
+require_relative './game/create_game'
+require_relative './game/game'
+require_relative './game/create_author'
+require_relative './game/list'
+require_relative './game/preserve_author_game'
 
 class App
-  attr_accessor :music_albums, :genres, :games, :authors
+  attr_accessor :music_albums, :genres, :books, :labels, :games, :authors
 
   def initialize
     @user_options = 0
     @genres = PreserveData.load_genres
     @music_albums = PreserveData.load_albums(@genres)
+    @games = PreserveAuthorGame.load_games
+    @authors = PreserveAuthorGame.load_authors
   end
 
   def list_options
@@ -26,21 +34,26 @@ class App
     when 4
       list_all_genres
     when 5
-      list_games
+      List.list_all_games(@games)
+    when 6
+      List.list_all_authors(@authors)
+
     end
   end
 
   def add_options
     case @user_options
-    when 6
-      list_authors
     when 7
-      add_book
+      CreateAuthor.create_author(@authors)
+      PreserveAuthorGame.store_author(@authors)
     when 8
-      AlbumCreator.create_album(@music_albums, @genres)
+      CreateMusicAlbum.create_music_album(@music_albums, @genres)
     when 9
-      add_game
+      AlbumCreator.create_album(@music_albums, @genres)
     when 10
+      CreateGame.create_game(@games)
+      PreserveAuthorGame.store_games(@games)
+    when 11
       exit_app
     else
       puts 'Enter a valid option (1 - 10)'
@@ -56,10 +69,11 @@ class App
         [4] - List All Genres
         [5] - List All Games
         [6] - List All Authors
-        [7] - Add a Book
+        [7] - Add a new Author
         [8] - Add a Music Album
-        [9] - Add a Game
-        [10] - Exit
+        [9] - Add a Book
+        [10] - Add a Game
+        [11] - Exit
 
         Type your option"
     @user_options = gets.chomp.to_i
@@ -118,6 +132,8 @@ class App
     puts 'Thank you for using this app'
     PreserveData.store_albums(@music_albums)
     PreserveData.store_genres(@genres)
+    # PreserveAuthorGame.store_games(@games)
+    # PreserveAuthorGame.store_authors(@authors)
     exit
   end
 end
