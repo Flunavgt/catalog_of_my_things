@@ -1,8 +1,14 @@
 [
   {
-    "publish_date": "11/17/2022",
-    "id": 305,
+    "publish_date": null,
+    "id": null,
     "on_spotify": null,
     "genre": 788
+  },
+  {
+    "publish_date": null,
+    "id": null,
+    "on_spotify": null,
+    "genre": 92
   }
 ]

@@ -9,7 +9,7 @@ def add_book
   puts 'Enter publisher'
   publisher = gets.chomp
   puts 'Enter publish date in format (YYYY-MM-DD)'
-  publish_date = Date.parse(gets.chomp)
+  publish_date = gets.chomp
   puts 'Enter the cover state'
   cover_state = gets.chomp
   puts 'Enter title'
