@@ -6,7 +6,6 @@ module DataValues
   @artist = []
   @album_title = []
 
-
   def self.albums
     @albums
   end
@@ -22,5 +21,4 @@ module DataValues
   def self.artist
     @artist
   end
-
 end

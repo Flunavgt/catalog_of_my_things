@@ -1,10 +1,18 @@
 [
   {
-    "publish_date": null,
-    "id": null,
-    "on_spotify": true,
+    "publish_date": "11/17/2022",
+    "id": 498,
+    "on_spotify": "Kop",
     "artist": "Leo",
-    "album_title": "Kop",
+    "album_title": true,
     "genre": 690
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 66,
+    "on_spotify": true,
+    "artist": "fdg",
+    "album_title": "fgh",
+    "genre": 826
   }
 ]

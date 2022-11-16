@@ -10,13 +10,13 @@ AllCops:
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
-
+  Max: 100
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-
+  Max: 150
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
@@ -46,5 +46,4 @@ Style/HashEachMethods:
   Enabled: false
 Style/HashTransformKeys:
   Enabled: false
-Style/HashTransformValues:
 

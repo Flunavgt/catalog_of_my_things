@@ -27,7 +27,6 @@ class App
     @music_albums = PreserveData.load_albums(@genres)
     @games = PreserveAuthorGame.load_games
     @authors = PreserveAuthorGame.load_authors
-    
   end
 
   def load_data
