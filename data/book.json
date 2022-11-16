@@ -33,5 +33,15 @@
     "publish_date": "12/12/2000",
     "publisher": "sdfsg",
     "cover_state": "dfg"
+  },
+  {
+    "publish_date": "12/12/2012",
+    "publisher": "fg",
+    "cover_state": "dsfg"
+  },
+  {
+    "publish_date": "12/11/2011",
+    "publisher": "Jauco",
+    "cover_state": "Goood"
   }
 ]

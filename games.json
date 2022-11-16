@@ -1,6 +1,6 @@
 [
   {
-    "publish_date": "11/16/2022",
+    "publish_date": "11/17/2022",
     "id": 582,
     "archived": false,
     "multiplayer": true,
@@ -8,7 +8,7 @@
     "game_name": "Poker"
   },
   {
-    "publish_date": "11/16/2022",
+    "publish_date": "11/17/2022",
     "id": 673,
     "archived": false,
     "multiplayer": true,
@@ -16,7 +16,7 @@
     "game_name": "Hill Climb"
   },
   {
-    "publish_date": "11/16/2022",
+    "publish_date": "11/17/2022",
     "id": 626,
     "archived": false,
     "multiplayer": true,
@@ -24,7 +24,7 @@
     "game_name": "Snake"
   },
   {
-    "publish_date": "11/16/2022",
+    "publish_date": "11/17/2022",
     "id": 697,
     "archived": false,
     "multiplayer": true,
@@ -32,11 +32,27 @@
     "game_name": "qweqwe"
   },
   {
-    "publish_date": "11/16/2022",
+    "publish_date": "11/17/2022",
     "id": 804,
     "archived": false,
     "multiplayer": true,
     "last_played": "10-10-2022",
     "game_name": "GTO 2"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 925,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "12/12/2012",
+    "game_name": "jumper"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 348,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "11/12/2019",
+    "game_name": "Enjoy"
   }
 ]

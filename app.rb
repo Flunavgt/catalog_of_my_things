@@ -8,6 +8,12 @@ require_relative './item'
 require_relative './options/add_book'
 require_relative './options/list_books'
 require_relative './options/list_lables'
+require_relative './game/author'
+require_relative './game/create_game'
+require_relative './game/game'
+require_relative './game/create_author'
+require_relative './game/list'
+require_relative './game/preserve_author_game'
 require 'colorize'
 
 class App
@@ -19,6 +25,8 @@ class App
     @user_options = 0
     @genres = PreserveData.load_genres
     @music_albums = PreserveData.load_albums(@genres)
+    @games = PreserveAuthorGame.load_games
+    @authors = PreserveAuthorGame.load_authors
     
   end
 
@@ -36,10 +44,11 @@ class App
     when 3
       list_labels
     when 4
-      list_all_genres
+      List.list_all_genres(@genres)
     when 5
+      List.list_all_games(@games)
     when 6
-
+      List.list_all_authors(@authors)
     end
   end
 
@@ -55,6 +64,9 @@ class App
       CreateGame.create_game(@games)
       PreserveAuthorGame.store_games(@games)
     when 10
+      CreateAuthor.create_author(@authors)
+      PreserveAuthorGame.store_author(@authors)
+    when 11
       exit_app
     else
       puts 'Enter a valid option (1 - 10)'
@@ -73,7 +85,8 @@ class App
         [7] - Add a Book
         [8] - Add a Music Album
         [9] - Add a Game
-        [10] - Exit
+        [10] - Add an Author
+        [11] - Exit
 
         Type your option"
     @user_options = gets.chomp.to_i
