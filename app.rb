@@ -5,12 +5,6 @@ require_relative './music/music_album'
 require_relative './music/lists'
 require_relative './music/genre'
 require_relative './item'
-require_relative './game/author'
-require_relative './game/create_game'
-require_relative './game/game'
-require_relative './game/create_author'
-require_relative './game/list'
-require_relative './game/preserve_author_game'
 require_relative './options/add_book'
 require_relative './options/list_books'
 require_relative './options/list_lables'
@@ -25,8 +19,7 @@ class App
     @user_options = 0
     @genres = PreserveData.load_genres
     @music_albums = PreserveData.load_albums(@genres)
-    @games = PreserveAuthorGame.load_games
-    @authors = PreserveAuthorGame.load_authors
+    
   end
 
   def load_data
@@ -45,9 +38,7 @@ class App
     when 4
       list_all_genres
     when 5
-      List.list_all_games(@games)
     when 6
-      List.list_all_authors(@authors)
 
     end
   end

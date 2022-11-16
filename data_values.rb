@@ -5,7 +5,7 @@ module DataValues
   @labels = []
   @artist = []
   @album_title = []
-  @game_title = []
+
 
   def self.albums
     @albums
@@ -23,11 +23,4 @@ module DataValues
     @artist
   end
 
-  def self.authors
-    @authors
-  end
-
-  def game_title
-    @game_title
-  end
 end
