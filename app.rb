@@ -17,9 +17,9 @@ class App
     @labels = []
     @user_options = 0
     @genres = PreserveData.load_genres
-    @music_albums = PreserveData.load_albums(@genres)    
+    @music_albums = PreserveData.load_albums(@genres)
   end
-  
+
   def load_data
     load_books
     load_labels

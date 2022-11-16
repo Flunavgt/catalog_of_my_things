@@ -18,7 +18,7 @@ class PreserveData
     if File.exist?(file)
       JSON.parse(File.read(file)).each do |album|
         new_album = MusicAlbum.new(album['on_spotify'], album['artist'], album['album_title'])
-      
+
         genre = genres.find do |g|
           g.id == album['genre']
         end
