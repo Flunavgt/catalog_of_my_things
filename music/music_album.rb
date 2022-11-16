@@ -1,4 +1,4 @@
-require_relative '../classes/item'
+require_relative '../item'
 
 class MusicAlbum < Item
   attr_accessor :on_spotify, :name, :album_title, :artist

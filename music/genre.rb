@@ -1,4 +1,4 @@
-require_relative '../classes/item'
+require_relative '../item'
 require 'securerandom'
 class Genre
   attr_accessor :name, :id, :items
