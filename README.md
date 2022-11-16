@@ -4,6 +4,7 @@
 
 > App developed in Ruby with UI to manage Books, Music and Games.
 
+![Screen Shot 2022-11-16 at 15 52 14](https://user-images.githubusercontent.com/99816838/202302772-7a77cbf6-8bc8-4b2e-98d0-2fc0e5fb4b5e.png)
 
 ## Built With
 
