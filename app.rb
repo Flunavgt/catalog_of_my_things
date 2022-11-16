@@ -19,6 +19,8 @@ class App
   attr_accessor :music_albums, :genres, :books, :labels, :games, :authors
 
   def initialize
+    @books = []
+    @labels = []
     @user_options = 0
     @genres = PreserveData.load_genres
     @music_albums = PreserveData.load_albums(@genres)
