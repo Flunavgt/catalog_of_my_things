@@ -8,6 +8,7 @@ require_relative './item'
 require_relative './options/add_book'
 require_relative './options/list_books'
 require_relative './options/list_lables'
+require 'colorize'
 
 class App
   attr_accessor :music_albums, :genres, :books, :labels, :games, :authors
@@ -46,14 +47,14 @@ class App
     case @user_options
     when 7
       add_book
-      
+      CreateAuthor.create_author(@authors)
+      PreserveAuthorGame.store_author(@authors)
     when 8
-      CreateMusicAlbum.create_music_album(@music_albums, @genres)
-    when 9
       AlbumCreator.create_album(@music_albums, @genres)
+    when 9
+      CreateGame.create_game(@games)
+      PreserveAuthorGame.store_games(@games)
     when 10
-      
-    when 11
       exit_app
     else
       puts 'Enter a valid option (1 - 10)'
@@ -61,8 +62,8 @@ class App
   end
 
   def dashboard
+    puts 'Please choose an option by entering a number from below:'.colorize(:red)
     puts "
-        Please choose an option by entering a number from below:\n
         [1] - List All Books
         [2] - List All Music Albums
         [3] - List All Labels
@@ -71,9 +72,8 @@ class App
         [6] - List All Authors
         [7] - Add a Book
         [8] - Add a Music Album
-        [9] - Add a new Author
-        [10] - Add a Game
-        [11] - Exit
+        [9] - Add a Game
+        [10] - Exit
 
         Type your option"
     @user_options = gets.chomp.to_i
@@ -81,47 +81,6 @@ class App
     add_options
     dashboard
   end
-
-  # def opt_sw
-  #   show_menu
-  #   menu_list = {
-  #     '1' => @book.list_books,
-  #     '2' => List.list_all_music_albums(@music_albums),
-  #     '3' => @label.list_labels,
-  #     '4' => List.list_all_genres(@genres),
-  #     '5' => @game.list_games,
-  #     '6' => @author.list_authors,
-  #     '7' => @book.add_book,
-  #     '8' => AlbumCreator.create_album(@music_albums, @genres),
-  #     '9' => @game.add_game
-  #   }
-
-  #   menu = gets.chomp
-  #   if menu.to_i <= 8
-  #     menu_list[menu].call
-  #   elsif menu == '0'
-  #     puts 'Thank you, come back soon.'
-  #   else
-  #     opt_sw
-  #   end
-  # end
-
-  # def show_menu
-  #   puts "
-  #       Please choose an option by entering a number from below:\n
-  #       [1] - List All Books
-  #       [2] - List All Music Albums
-  #       [3] - List All Labels
-  #       [4] - List All Genres
-  #       [5] - List All Games
-  #       [6] - List All Authors
-  #       [7] - Add a Book
-  #       [8] - Add a Music Album
-  #       [9] - Add a Game
-  #       [10] - Exit
-
-  #       Type your option"
-  # end
 
   def run
     system('clear')
@@ -132,8 +91,6 @@ class App
     puts 'Thank you for using this app'
     PreserveData.store_albums(@music_albums)
     PreserveData.store_genres(@genres)
-    # PreserveAuthorGame.store_games(@games)
-    # PreserveAuthorGame.store_authors(@authors)
     exit
   end
 end

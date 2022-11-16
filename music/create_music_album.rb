@@ -26,7 +26,7 @@ class AlbumCreator
     artist = gets.chomp
     @on_spotify = AlbumCreator.switch_case(user_answer)
 
-    album = MusicAlbum.new(@on_spotify, album_title, artist)
+    album = MusicAlbum.new(album_title, artist, @on_spotify)
 
     new_genre = GenreCreator.new
     album.genre = new_genre.create_genre(genres)

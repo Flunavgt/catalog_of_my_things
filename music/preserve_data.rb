@@ -7,7 +7,7 @@ class PreserveData
     file = './albums.json'
     albums.each do |album|
       data << { publish_date: album.publish_date, id: album.id, on_spotify: album.on_spotify,
-                genre: album.genre.id }
+                artist: album.artist, album_title: album.album_title, genre: album.genre.id }
     end
     File.write(file, JSON.pretty_generate(data))
   end
