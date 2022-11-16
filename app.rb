@@ -11,9 +11,9 @@ require_relative './game/game'
 require_relative './game/create_author'
 require_relative './game/list'
 require_relative './game/preserve_author_game'
-require_relative './book/add_book'
-require_relative './book/list_books'
-require_relative './book/list_lables'
+require_relative './options/add_book'
+require_relative './options/list_books'
+require_relative './options/list_lables'
 
 class App
   attr_accessor :music_albums, :genres, :books, :labels, :games, :authors

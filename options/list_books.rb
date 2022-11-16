@@ -1,4 +1,4 @@
-require_relative './book'
+require_relative '../classes/book'
 
 @books = []
 

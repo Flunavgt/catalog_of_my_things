@@ -1,6 +1,6 @@
-require_relative './book'
-require_relative './label'
-require_relative './book_data'
+require_relative '../classes/book'
+require_relative '../classes/label'
+require_relative '../data/book_data'
 
 @books = []
 @labels = []
