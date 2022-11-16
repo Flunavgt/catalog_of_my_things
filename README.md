@@ -1,56 +1,48 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Catalog of my things
 
-> Description the project.
+> App developed in Ruby with UI to manage Books, Music and Games.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Verify you have Ruby installed on your system
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Clone the repository wit this link https://github.com/Flunavgt/catalog_of_my_things.git
 
-### Setup
+### Change to repo directory
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+### run App.rb
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Federico Luna**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Flunavgt](https://github.com/Flunavgt)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
-👤 **Author2**
+👤 **Addis Tsega**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Aseadd](https://github.com/Aseadd)
+- Twitter: [@AdaTsega](https://twitter.com/AdaTsega)
+- LinkedIn: [addis-tsega](https://linkedin.com/in/addis-tsega)
+
+👤 **Neeraj Bhardwaj**
+
+- GitHub: [Neeraj](https://github.com/rebel216)
+- Twitter: [Neeraj](https://twitter.com/rebel216)
+- LinkedIn: [Neeraj](https://www.linkedin.com/in/neerajbhardwaj216/)
+
 
 ## 🤝 Contributing
 
@@ -70,6 +62,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.

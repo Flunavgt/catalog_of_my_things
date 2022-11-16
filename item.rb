@@ -5,7 +5,7 @@ class Item
   attr_accessor :publish_date, :archived, :id
   attr_reader :author, :label, :genre, :artist, :album_title
 
-  def initialize(publish_date)
+
     @id = id || SecureRandom.random_number(1000)
     @publish_date = publish_date || DateTime.now.strftime('%m/%d/%Y')
     @archived = move_to_archive
@@ -43,6 +43,6 @@ class Item
   private
 
   def can_be_archived?
-    true
+
   end
 end
