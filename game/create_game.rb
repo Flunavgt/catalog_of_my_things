@@ -20,7 +20,11 @@ class CreateGame
     puts 'last played at'
     print "\nAnswer: "
     last_played = gets.chomp
-    game = Game.new(switch_case(user_answer), last_played)
+
+    puts 'Game Name'
+    print "\nAnswer: "
+    game_name = gets.chomp
+    game = Game.new(switch_case(user_answer), last_played, game_name)
     games << game
     puts "\nGame created successfully"
   end
