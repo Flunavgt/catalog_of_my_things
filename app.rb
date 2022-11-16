@@ -14,6 +14,7 @@ require_relative './game/preserve_author_game'
 require_relative './options/add_book'
 require_relative './options/list_books'
 require_relative './options/list_lables'
+require 'colorize'
 
 class App
   attr_accessor :music_albums, :genres, :books, :labels, :games, :authors
@@ -70,8 +71,8 @@ class App
   end
 
   def dashboard
+    puts 'Please choose an option by entering a number from below:'.colorize(:red)
     puts "
-        Please choose an option by entering a number from below:\n
         [1] - List All Books
         [2] - List All Music Albums
         [3] - List All Labels

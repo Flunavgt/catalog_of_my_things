@@ -2,9 +2,9 @@
   {
     "publish_date": "11/16/2022",
     "id": 539,
-    "on_spotify": true,
+    "on_spotify": "Greatest",
     "artist": "Toto",
-    "album_title": "Greatest",
+    "album_title": true,
     "genre": 547
   }
 ]
