@@ -11,6 +11,9 @@ require_relative './game/game'
 require_relative './game/create_author'
 require_relative './game/list'
 require_relative './game/preserve_author_game'
+require_relative './book/add_book'
+require_relative './book/list_books'
+require_relative './book/list_lables'
 
 class App
   attr_accessor :music_albums, :genres, :books, :labels, :games, :authors
@@ -21,6 +24,11 @@ class App
     @music_albums = PreserveData.load_albums(@genres)
     @games = PreserveAuthorGame.load_games
     @authors = PreserveAuthorGame.load_authors
+  end
+
+  def load_data
+    load_books
+    load_labels
   end
 
   def list_options
@@ -44,6 +52,7 @@ class App
   def add_options
     case @user_options
     when 7
+      add_book
       CreateAuthor.create_author(@authors)
       PreserveAuthorGame.store_author(@authors)
     when 8
@@ -69,9 +78,9 @@ class App
         [4] - List All Genres
         [5] - List All Games
         [6] - List All Authors
-        [7] - Add a new Author
+        [7] - Add a Book
         [8] - Add a Music Album
-        [9] - Add a Book
+        [9] - Add a new Author
         [10] - Add a Game
         [11] - Exit
 
