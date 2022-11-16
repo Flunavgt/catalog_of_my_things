@@ -2,10 +2,10 @@ require 'date'
 require 'securerandom'
 
 class Item
-  attr_accessor :publish_date, :archived ,:id
+  attr_accessor :publish_date, :archived, :id
   attr_reader :author, :label, :genre, :artist, :album_title
 
-  def initialize(id , publish_date)
+  def initialize(id, publish_date)
     @id = id || SecureRandom.random_number(1000)
     @publish_date = publish_date || DateTime.now.strftime('%m/%d/%Y')
     @archived = move_to_archive
