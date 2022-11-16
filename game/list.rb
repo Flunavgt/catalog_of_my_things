@@ -5,12 +5,13 @@ class List
     if array.empty?
       puts "\n You have no games saved"
     else
-      array.each do |game|
-        puts " Date published #{game.publish_date}, \n Archive status #{game.archived},
-            \nMultiplayer status #{game.multiplayer} \nLast played #{game.last_played}"
+      array.each_with_index do |game, index|
+        puts "------------------------------------------------------------"
+        print "#{index} Game name: #{game.game_name} \n  Date published: #{game.publish_date} \n  Archive status: #{game.archived}"
+        puts "\n  Multiplayer status: #{game.multiplayer} \n  Last played: #{game.last_played}"
         puts "\n"
-        puts '--------------------------------'
       end
+      puts '------------------------------------------------------------'
     end
   end
 
