@@ -14,5 +14,13 @@
     "multiplayer": true,
     "last_played": "11-10-2005",
     "game_name": "Hill Climb"
+  },
+  {
+    "publish_date": "11/16/2022",
+    "id": 626,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "05-05-1995",
+    "game_name": "Snake"
   }
 ]

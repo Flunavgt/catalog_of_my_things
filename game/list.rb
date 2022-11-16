@@ -6,9 +6,10 @@ class List
       puts "\n You have no games saved"
     else
       array.each_with_index do |game, index|
-        puts "------------------------------------------------------------"
-        print "#{index} Game name: #{game.game_name} \n  Date published: #{game.publish_date} \n  Archive status: #{game.archived}"
-        puts "\n  Multiplayer status: #{game.multiplayer} \n  Last played: #{game.last_played}"
+        puts '------------------------------------------------------------'
+        print "#{index} Game name: #{game.game_name} \n  Date published: #{game.publish_date} "
+        print "\n  Archive status: #{game.archived} \n  Multiplayer status: #{game.multiplayer} "
+        puts "\n  Last played: #{game.last_played}"
         puts "\n"
       end
       puts '------------------------------------------------------------'
