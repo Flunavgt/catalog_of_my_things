@@ -1,7 +1,7 @@
 [
   {
     "publish_date": "11/17/2022",
-    "id": 452,
+    "id": 261,
     "on_spotify": "Greatest",
     "artist": "Toto",
     "album_title": true,
@@ -9,7 +9,7 @@
   },
   {
     "publish_date": "11/17/2022",
-    "id": 169,
+    "id": 920,
     "on_spotify": true,
     "artist": "Bon Jovi",
     "album_title": "Slippery when wet",
@@ -17,7 +17,7 @@
   },
   {
     "publish_date": "11/17/2022",
-    "id": 909,
+    "id": 482,
     "on_spotify": "AC/DC",
     "artist": true,
     "album_title": "AC/DC",
@@ -25,7 +25,7 @@
   },
   {
     "publish_date": "11/17/2022",
-    "id": 336,
+    "id": 643,
     "on_spotify": "AeroSmith",
     "artist": true,
     "album_title": "Big Ones",
