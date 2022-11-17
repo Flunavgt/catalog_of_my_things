@@ -5,6 +5,9 @@ require_relative '../classes/book'
 def list_books
   puts 'BOOKS'
   @books.each do |book|
-    puts "Publish Date: #{book.publish_date}, Publisher: #{book.publisher}, Cover State: #{book.cover_state}"
+    puts "#{'Publish Date:'.blue} #{book.publish_date}\n#{'Publisher:'.blue}     #{book.publisher}
+#{'Cover State:'.blue} #{book.cover_state}"
+    puts ''
+    sleep(2)
   end
 end

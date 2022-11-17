@@ -6,15 +6,17 @@ require_relative '../data/book_data'
 @labels = []
 
 def add_book
-  puts 'Enter publisher'
+  system('cls')
+  system('clear')
+  puts 'Enter publisher'.magenta.bold.underline
   publisher = gets.chomp
-  puts 'Enter publish date in format (YYYY-MM-DD)'
+  puts "\nEnter publish date in format (DD-MM-YYYY)".magenta.bold.underline
   publish_date = gets.chomp
-  puts 'Enter the cover state'
+  puts "\nEnter the cover state".magenta.bold.underline
   cover_state = gets.chomp
-  puts 'Enter title'
+  puts "\nEnter title".magenta.bold.underline
   title = gets.chomp
-  puts 'Enter color'
+  puts "\nEnter color".magenta.bold.underline
   color = gets.chomp
   new_book = Book.new(publish_date, publisher, cover_state)
   @books.push(new_book)
@@ -23,5 +25,8 @@ def add_book
   new_label = Label.new(title, color)
   @labels.push(new_label)
   save_label(new_label.title, new_label.color)
-  puts 'BOOK AND LABEL CREATED SUCCESSFULLY'
+  puts 'BOOK AND LABEL CREATED SUCCESSFULLY'.green
+  sleep(2)
+  system('cls')
+  system('clear')
 end

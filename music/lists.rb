@@ -6,11 +6,14 @@ class List
       puts "\n You have no music albums saved"
     else
       array.each do |album|
-        puts "Date published #{album.publish_date},
-      Artist #{album.artist},
-      Title #{album.album_title},
-      Archive status #{album.archived},
-      Spotify status  #{album.on_spotify}"
+        puts "\n        #{'Album Information'.green.underline}
+        #{'Date published:'.blue} #{album.publish_date}
+        #{'Artist:'.blue}         #{album.artist}
+        #{'Title:'.blue}          #{album.album_title}
+        #{'Archive status:'.blue} #{album.archived}
+        #{'Spotify status:'.blue} #{album.on_spotify}"
+        puts ''
+        sleep(2)
       end
     end
   end

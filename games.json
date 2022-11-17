@@ -1,3 +1,50 @@
 [
-  
+  {
+    "publish_date": "11/17/2022",
+    "id": 582,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "11-10-2011",
+    "game_name": "Poker"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 673,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "11-10-2005",
+    "game_name": "Hill Climb"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 626,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "05-05-1995",
+    "game_name": "Snake"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 697,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "2121-12-12",
+    "game_name": "qweqwe"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 804,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "10-10-2022",
+    "game_name": "GTO 2"
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 925,
+    "archived": false,
+    "multiplayer": true,
+    "last_played": "12/12/2012",
+    "game_name": "jumper"
+  }
 ]

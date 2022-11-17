@@ -7,10 +7,11 @@ class List
     else
       array.each_with_index do |game, index|
         puts '------------------------------------------------------------'
-        print "#{index} Game name: #{game.game_name} \n  Date published: #{game.publish_date} "
-        print "\n  Archive status: #{game.archived} \n  Multiplayer status: #{game.multiplayer} "
-        puts "\n  Last played: #{game.last_played}"
+        print "#{index} #{'Game name:'.blue}           #{game.game_name} \n  #{'Date published:'.blue}      #{game.publish_date} "
+        print "\n  #{'Archive status:'.blue}      #{game.archived} \n  #{'Multiplayer status:'.blue}  #{game.multiplayer} "
+        puts "\n  #{'Last played:'.blue}         #{game.last_played}"
         puts "\n"
+        sleep(2)
       end
       puts '------------------------------------------------------------'
     end

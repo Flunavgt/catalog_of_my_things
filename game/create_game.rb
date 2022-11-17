@@ -14,18 +14,20 @@ class CreateGame
   end
 
   def self.create_game(games)
-    puts 'Is the game multiplayer? [Y | N]'
-    print "\nAnswer: "
+    system('cls')
+    system('clear')
+    puts 'Is the game multiplayer? [Y | N]'.magenta.bold.underline
+    print 'Answer: '
     user_answer = gets.chomp.downcase
-    puts 'last played at'
-    print "\nAnswer: "
+    puts "\nlast played at".magenta.bold.underline
+    print 'Answer: '
     last_played = gets.chomp
 
-    puts 'Game Name'
-    print "\nAnswer: "
+    puts "\nGame Name".magenta.bold.underline
+    print 'Answer: '
     game_name = gets.chomp
     game = Game.new(switch_case(user_answer), last_played, game_name)
     games << game
-    puts "\nGame created successfully"
+    puts "\nGame created successfully".green
   end
 end

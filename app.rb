@@ -73,19 +73,26 @@ class App
   end
 
   def dashboard
+    puts '
+                  _        _
+         ___ __ _| |_ __ _| | ___   __ _
+        / __/ _` | __/ _` | |/ _ \ / _` |
+       | (_| (_| | || (_| | | (_) | (_| |
+        \___\__,_|\__\__,_|_|\___/ \__, |
+                                    |___/ '
     puts 'Please choose an option by entering a number from below:'.colorize(:red)
     puts "
-        [1] - List All Books
-        [2] - List All Music Albums
-        [3] - List All Labels
-        [4] - List All Genres
-        [5] - List All Games
-        [6] - List All Authors
-        [7] - Add a Book
-        [8] - Add a Music Album
-        [9] - Add a Game
-        [10] - Add an Author
-        [11] - Exit
+        #{'[1]'.blue} - List All Books
+        #{'[2]'.blue} - List All Music Albums
+        #{'[3]'.blue} - List All Labels
+        #{'[4]'.blue} - List All Genres
+        #{'[5]'.blue} - List All Games
+        #{'[6]'.blue} - List All Authors
+        #{'[7]'.blue} - Add a Book
+        #{'[8]'.blue} - Add a Music Album
+        #{'[9]'.blue} - Add a Game
+        #{'[10]'.blue} - Add an Author
+        #{'[11]'.blue} - Exit
 
         Type your option"
     @user_options = gets.chomp.to_i
