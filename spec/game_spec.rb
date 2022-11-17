@@ -1,6 +1,6 @@
 require 'date'
-require_relative '../game'
-require_relative '../../item'
+require_relative '../game/game'
+require_relative '../item'
 
 describe 'Game' do
   it 'should be able to be created' do

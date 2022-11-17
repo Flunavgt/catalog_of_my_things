@@ -1,4 +1,4 @@
-require_relative '../author'
+require_relative '../game/author'
 
 describe 'Author' do
   it 'should be able to be created' do
