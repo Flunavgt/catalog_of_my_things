@@ -3,8 +3,12 @@
 # Catalog of my things
 
 > App developed in Ruby with UI to manage Books, Music and Games.
+![Screen Shot 2022-11-17 at 12 04 51](https://user-images.githubusercontent.com/99816838/202528337-5dc461ac-fb4e-480b-a098-f22085db67b4.png)
+![Screen Shot 2022-11-17 at 12 07 02](https://user-images.githubusercontent.com/99816838/202528352-e512ff4d-990c-42d5-88c7-99896eda4317.png)
+![Screen Shot 2022-11-17 at 12 08 13](https://user-images.githubusercontent.com/99816838/202528366-c6c15fe5-11db-4070-8e37-bc7e0341180e.png)
+![Screen Shot 2022-11-17 at 12 10 10](https://user-images.githubusercontent.com/99816838/202528376-39622165-8693-40d6-afeb-7ed7f84bd170.png)
 
-![Screen Shot 2022-11-16 at 15 52 14](https://user-images.githubusercontent.com/99816838/202302772-7a77cbf6-8bc8-4b2e-98d0-2fc0e5fb4b5e.png)
+
 
 ## Built With
 
