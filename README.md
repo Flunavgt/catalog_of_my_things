@@ -1,56 +1,55 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Catalog of my things
 
-> Description the project.
+> App developed in Ruby with UI to manage Books, Music and Games.
+![Screen Shot 2022-11-17 at 12 04 51](https://user-images.githubusercontent.com/99816838/202528337-5dc461ac-fb4e-480b-a098-f22085db67b4.png)
+![Screen Shot 2022-11-17 at 12 07 02](https://user-images.githubusercontent.com/99816838/202528352-e512ff4d-990c-42d5-88c7-99896eda4317.png)
+![Screen Shot 2022-11-17 at 12 08 13](https://user-images.githubusercontent.com/99816838/202528366-c6c15fe5-11db-4070-8e37-bc7e0341180e.png)
+![Screen Shot 2022-11-17 at 12 10 10](https://user-images.githubusercontent.com/99816838/202528376-39622165-8693-40d6-afeb-7ed7f84bd170.png)
+
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Verify you have Ruby installed on your system
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Clone the repository wit this link https://github.com/Flunavgt/catalog_of_my_things.git
 
-### Setup
+### Change to repo directory
 
-### Install
+### run App.rb
 
-### Usage
-
-### Run tests
-
-### Deployment
-
+## Video description [Here](https://drive.google.com/file/d/1GJ2QIq_w3t--Jdq2v5KaH0Ay6g2fsz61/view?usp=sharing)
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Federico Luna**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Flunavgt](https://github.com/Flunavgt)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
-👤 **Author2**
+👤 **Addis Tsega**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Aseadd](https://github.com/Aseadd)
+- Twitter: [@AdaTsega](https://twitter.com/AdaTsega)
+- LinkedIn: [addis-tsega](https://linkedin.com/in/addis-tsega)
+
+👤 **Neeraj Bhardwaj**
+
+- GitHub: [Neeraj](https://github.com/rebel216)
+- Twitter: [Neeraj](https://twitter.com/rebel216)
+- LinkedIn: [Neeraj](https://www.linkedin.com/in/neerajbhardwaj216/)
+
 
 ## 🤝 Contributing
 
@@ -70,6 +69,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.

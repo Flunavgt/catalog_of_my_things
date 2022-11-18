@@ -1,0 +1,34 @@
+[
+  {
+    "publish_date": "11/17/2022",
+    "id": 261,
+    "on_spotify": "Greatest",
+    "artist": "Toto",
+    "album_title": true,
+    "genre": 173
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 920,
+    "on_spotify": true,
+    "artist": "Bon Jovi",
+    "album_title": "Slippery when wet",
+    "genre": 635
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 482,
+    "on_spotify": "AC/DC",
+    "artist": true,
+    "album_title": "AC/DC",
+    "genre": 638
+  },
+  {
+    "publish_date": "11/17/2022",
+    "id": 643,
+    "on_spotify": "AeroSmith",
+    "artist": true,
+    "album_title": "Big Ones",
+    "genre": 594
+  }
+]
